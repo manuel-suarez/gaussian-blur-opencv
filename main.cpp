@@ -38,5 +38,12 @@ int main(int argc, char** argv)
     namedWindow(window_name_blurred_with_3x3_kernel);
     namedWindow(window_name_blurred_with_5x5_kernel);
 
-    //
+    // Show our images inside the created windows.
+    imshow(window_name, image);
+    imshow(window_name_blurred_with_3x3_kernel, image_blurred_with_3x3_kernel);
+    imshow(window_name_blurred_with_5x5_kernel, image_blurred_with_5x5_kernel);
+
+    waitKey(0); // Wait stroke
+    destroyAllWindows();
+    return 0;
 }
