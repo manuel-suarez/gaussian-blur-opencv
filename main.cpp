@@ -28,5 +28,15 @@ int main(int argc, char** argv)
     Mat image_blurred_with_5x5_kernel;
     GaussianBlur(image, image_blurred_with_5x5_kernel, Size(5, 5), 0);
 
+    // Window's names
+    String window_name = "Lotus";
+    String window_name_blurred_with_3x3_kernel = "Lotus Blurred with 3 x 3 Gaussian Kernel";
+    String window_name_blurred_with_5x5_kernel = "Lotus Blurred with 5 x 5 Gaussian Kernel";
 
+    // Create windows with above names
+    namedWindow(window_name);
+    namedWindow(window_name_blurred_with_3x3_kernel);
+    namedWindow(window_name_blurred_with_5x5_kernel);
+
+    //
 }
