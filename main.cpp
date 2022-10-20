@@ -19,4 +19,14 @@ int main(int argc, char** argv)
         cin.get(); // wait for any key press
         return -1;
     }
+
+    // Blur the image with 3x3 Gaussian kernel
+    Mat image_blurred_with_3x3_kernel;
+    GaussianBlur(image, image_blurred_with_3x3_kernel, Size(3, 3), 0);
+
+    // Blus the image with 5x5 Gaussian kernel
+    Mat image_blurred_with_5x5_kernel;
+    GaussianBlur(image, image_blurred_with_5x5_kernel, Size(5, 5), 0);
+
+
 }
